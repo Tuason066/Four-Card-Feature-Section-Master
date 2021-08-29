@@ -33,17 +33,17 @@ img {
     max-width: 100%;
 }
 
-h1 {
-    font-size: 1.6rem;
-    font-weight: $Bold;
-}
-
 h2 {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     font-weight: $Bold;
 }
 
-h1,h2 {
+h3 {
+    font-size: 1.2rem;
+    font-weight: $Bold;
+}
+
+h2,h3 {
     color: $VeryDarkBlue;
 }
 
@@ -68,14 +68,14 @@ p {
     padding: 5em 0;
     text-align: center;
     &__feature {
-        font-size: 1.6rem;
+        font-size: 1.4rem;
         font-weight: $Thin;
     }
     &__courtesy {
         margin: .5rem 0 1rem 0;
     }
     &__text {
-        font-size: 1.1rem;
+        font-size: 1rem;
         font-weight: $Normal;
         line-height: 1.5;
         max-width: 500px;
@@ -99,6 +99,7 @@ p {
     &__text {
         line-height: 1.5;
         margin-bottom: 2em;
+        font-size: .9rem;
     }
     &__icon--wrapper {
         text-align: right;
@@ -120,6 +121,26 @@ p {
 }
 .calculator {
     border-top: 5px solid $Blue;
+}
+
+@media (min-width: 375px) {
+
+    h2,
+    .content__feature {
+        font-size: 1.7rem;
+    }
+
+    h3 {
+        font-size: 1.4rem;
+    }
+
+    .content__text {
+        font-size: 1.1rem;
+    }
+
+    .cards__text {
+        font-size: 1rem;
+    }
 }
 
 @media (min-width: 600px) {
